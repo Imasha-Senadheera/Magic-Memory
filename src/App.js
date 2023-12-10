@@ -24,6 +24,8 @@ function App() {
       .sort(() => Math.random() - 0.5)
       .map(card => ({ ...card, id: Math.random() }))
 
+    setChoiceOne(null)
+    setChoiceTwo(null)
     setCards(shuffledCards)
     setTurns(0)
   }
@@ -38,7 +40,7 @@ function App() {
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       setDisabled(true)
-      
+
       if (choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
           return prevCards.map(card => {
@@ -67,6 +69,11 @@ function App() {
     setDisabled(false)
   }
 
+  // start new game automagically
+  useEffect(() => {
+    shuffleCards()
+  }, [])
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
@@ -83,7 +90,7 @@ function App() {
           />
         ))}
       </div>
-
+      <p className="fancy-text">Turns: {turns}</p>
     </div>
   );
 }

@@ -1,7 +1,10 @@
+/* styles.css */
+
 .App {
   max-width: 860px;
   margin: 40px auto;
 }
+
 button {
   background: none;
   border: 2px solid #FDF4F5;
@@ -12,13 +15,21 @@ button {
   cursor: pointer;
   font-size: 1em;
 }
+
 button:hover {
   background: #E8A0BF;
   color: #FDF4F5;
 }
+
 .card-grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+/* Add the new styles for the <p> element here */
+.fancy-text {
+  color: #FDF4F5;
+  font-family: 'Raleway', sans-serif;
 }
