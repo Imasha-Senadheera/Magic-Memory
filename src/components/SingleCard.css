@@ -1,0 +1,9 @@
+.card {
+    position: relative;
+  }
+  .card img {
+    width: 100%;
+    display: block;
+    border: 6px solid #FDF4F5;
+    border-radius: 10px;
+  }
