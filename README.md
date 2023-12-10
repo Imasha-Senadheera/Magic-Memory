@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Magic Match Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a memory card matching game built with React. The goal of the game is to match pairs of cards with the same image. It features card shuffling, turn tracking, and a stylish user interface. The project serves as a practice exercise for React development and includes basic game logic and styling.
 
-## Available Scripts
+<br>
+<img width="300" alt="1" src="https://github.com/Imasha-Senadheera/Magic-Memory/assets/121493197/8945b119-dc5b-4722-9970-af29dca03c58" >
 
-In the project directory, you can run:
+<img width="300" alt="1" src="https://github.com/Imasha-Senadheera/Magic-Memory/assets/121493197/08a76804-7528-49df-8794-c5734067db2c" >
 
-### `npm start`
+<img width="300" alt="1" src="https://github.com/Imasha-Senadheera/Magic-Memory/assets/121493197/654bb995-3979-42f4-b7a2-0feb7d65c835" >
+<br><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- React
+- HTML
+- CSS
+- Google Fonts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Game Features
+- **Card Matching:** Flip two cards at a time and try to match pairs with the same image.
+- **Turn Tracking:** Keep track of the number of turns taken to complete the game.
+- **New Game Button:** Start a new game by shuffling the cards.
+- **Stylish UI:** Stylish and responsive user interface with custom styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+## Game Rules
+1. Click on a card to reveal the image.
+2. Click on another card to check if it matches the first one.
+3. If the cards match, they stay flipped. If not, they flip back after a brief delay.
+4. Continue until all pairs are matched.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Notes
+- This project is a practice exercise for React development and incorporates basic game logic and styling.
+- Feel free to customize and expand the game based on your preferences.
