@@ -3,12 +3,12 @@ import './App.css'
 import SingleCard from './components/SingleCard'
 
 const cardImages = [
-  { "src": "/img/bath.png" },
-  { "src": "/img/bee.png" },
-  { "src": "/img/bug.png" },
-  { "src": "/img/butter.png" },
-  { "src": "/img/golu.png" },
-  { "src": "/img/panu.png" },
+  { "src": "/img/bath.png", matched: false },
+  { "src": "/img/bee.png", matched: false },
+  { "src": "/img/bug.png", matched: false },
+  { "src": "/img/butter.png", matched: false },
+  { "src": "/img/golu.png", matched: false },
+  { "src": "/img/panu.png", matched: false },
 ]
 
 function App() {
@@ -38,15 +38,24 @@ function App() {
     if (choiceOne && choiceTwo) {
 
       if (choiceOne.src === choiceTwo.src) {
-        console.log('Those cards match!')
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if (card.src === choiceOne.src) {
+              return { ...card, matched: true }
+            } else {
+              return card
+            }
+          })
+        })
         resetTurn()
       } else {
-        console.log('Those cards do not match!')
         resetTurn()
       }
 
     }
   }, [choiceOne, choiceTwo])
+
+  console.log(cards)
 
   // reset choices & increase turn
   const resetTurn = () => {
@@ -66,6 +75,7 @@ function App() {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
+            flipped={card === choiceOne || card === choiceTwo || card.matched}
           />
         ))}
       </div>
